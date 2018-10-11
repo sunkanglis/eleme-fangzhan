@@ -90,10 +90,11 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\r\n\r\nconst home_controller = __webpack_require__(/*! ./controllers/home_controller */ \"./src/js/controllers/home_controller.js\");\r\n\r\nhome_controller.render();\r\n\n\n//# sourceURL=webpack:///./src/js/app.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _controllers_home_controller__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controllers/home_controller */ \"./src/js/controllers/home_controller.js\");\n\n_controllers_home_controller__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render();\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -101,10 +102,11 @@ eval("\r\n\r\nconst home_controller = __webpack_require__(/*! ./controllers/home
 /*!***********************************************!*\
   !*** ./src/js/controllers/home_controller.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\r\n//home视图的控制器\r\nconst home_template = __webpack_require__(/*! ../views/home/home.html */ \"./src/js/views/home/home.html\");\r\n\r\n// 负责将home视图模板渲染在对应的地方\r\nconst render = () => {\r\n    // 刚才说了，一切皆模块，说明html也是模块，看一下它暴露的是什么 发现是字符串\r\n    //console.log(home_template)\r\n    document.querySelector('#root').innerHTML = home_template;\r\n    \r\n}\r\n\r\nmodule.exports = {\r\n    render\r\n}\r\n\r\n\r\n// 需求： 显示home  MVC\n\n//# sourceURL=webpack:///./src/js/controllers/home_controller.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_home_home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/home/home.html */ \"./src/js/views/home/home.html\");\n/* harmony import */ var _views_home_home_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_home_home_html__WEBPACK_IMPORTED_MODULE_0__);\n//home视图的控制器\n // 负责将home视图模板渲染在对应的地方\n\nvar render = function render() {\n  // 刚才说了，一切皆模块，说明html也是模块，看一下它暴露的是什么 发现是字符串\n  //console.log(home_template)\n  document.querySelector('#root').innerHTML = _views_home_home_html__WEBPACK_IMPORTED_MODULE_0___default.a;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render // 需求： 显示home  MVC\n\n});\n\n//# sourceURL=webpack:///./src/js/controllers/home_controller.js?");
 
 /***/ }),
 
