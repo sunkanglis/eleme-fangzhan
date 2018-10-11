@@ -104,29 +104,7 @@ eval("\r\n\r\nconst home_controller = __webpack_require__(/*! ./controllers/home
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\r\n//home视图的控制器\r\nconst home_template = __webpack_require__(/*! ../views/home/home.html */ \"./src/js/views/home/home.html\");\r\nconst home_job_controller = __webpack_require__(/*! ./home_job_controller */ \"./src/js/controllers/home_job_controller.js\");\r\n\r\n// 负责将home视图模板渲染在对应的地方\r\nconst render = () => {\r\n    // 刚才说了，一切皆模块，说明html也是模块，看一下它暴露的是什么 发现是字符串\r\n    //console.log(home_template)\r\n    document.querySelector('#root').innerHTML = home_template;\r\n    home_job_controller.render();\r\n}\r\n\r\nmodule.exports = {\r\n    render\r\n}\r\n\r\n\r\n// 需求： 显示home  MVC\n\n//# sourceURL=webpack:///./src/js/controllers/home_controller.js?");
-
-/***/ }),
-
-/***/ "./src/js/controllers/home_job_controller.js":
-/*!***************************************************!*\
-  !*** ./src/js/controllers/home_job_controller.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\r\n\r\nconst home_job_template = __webpack_require__(/*! ../views/home/home-job.html */ \"./src/js/views/home/home-job.html\");\r\n\r\nconst render = () => {\r\n    document.querySelector('.home-container main').innerHTML = home_job_template;\r\n}\r\n\r\nmodule.exports = {\r\n    render\r\n}\n\n//# sourceURL=webpack:///./src/js/controllers/home_job_controller.js?");
-
-/***/ }),
-
-/***/ "./src/js/views/home/home-job.html":
-/*!*****************************************!*\
-  !*** ./src/js/views/home/home-job.html ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"\"\n\n//# sourceURL=webpack:///./src/js/views/home/home-job.html?");
+eval("\r\n//home视图的控制器\r\nconst home_template = __webpack_require__(/*! ../views/home/home.html */ \"./src/js/views/home/home.html\");\r\n\r\n// 负责将home视图模板渲染在对应的地方\r\nconst render = () => {\r\n    // 刚才说了，一切皆模块，说明html也是模块，看一下它暴露的是什么 发现是字符串\r\n    //console.log(home_template)\r\n    document.querySelector('#root').innerHTML = home_template;\r\n    \r\n}\r\n\r\nmodule.exports = {\r\n    render\r\n}\r\n\r\n\r\n// 需求： 显示home  MVC\n\n//# sourceURL=webpack:///./src/js/controllers/home_controller.js?");
 
 /***/ }),
 
